@@ -1,0 +1,162 @@
+/*  Project: Auto Lightbox,
+     Developer: Asif Mughal 
+     Official URL: www.codehim.com (visit to free download awesome web projects)
+     License: MIT License 
+*/
+* {margin: 0; padding: 0}
+ body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 11pt;
+}
+.intro{ 
+   padding: 20px;
+   text-align: center;
+   line-height: 1.5;
+   color: #fff;
+   display: block;
+   background: #E4287C;
+	background: -webkit-linear-gradient(to right, #33001b, #E4287C);
+   background: linear-gradient(to right, #33001b, #E4287C);
+}
+
+.intro h1 {
+    font-size: 18pt;
+    padding: 20px;
+   font-family: 'Fjalla One', sans-serif;
+   text-shadow: 1px 0.05px rgba(0, 0, 0, 0.5);
+}
+.sample {
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;
+
+}
+.sample img{
+   width: 290;
+   height: 170px;
+   background: #fff;
+   padding: 10px;
+   box-sizing: border-box;
+   border-radius: 0 0 0 10px;
+}
+.action{
+   text-align: center;
+   display: block;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #fff;
+   border: 2px solid #fff;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-left: 5px;
+}
+a.btn:hover{
+   background: #fff;
+    color: #E4287C;
+    transition: .3s;
+-webkit-transition: .3s;
+}
+.elli:before,
+.github:before,
+.down:before{
+  font-family: FontAwesome;
+  font-weight: normal;
+}
+.github:before{content: "\f09b"}
+.down:before{content: "\f019"}
+.elli:before{content: "\f141" }
+
+/* Grid Items */
+.grid-items{
+   list-style: none; 
+   margin: 0;
+   padding: 8px 0 2px 0;
+   text-align: center;
+}
+.grid-items li{
+   display: inline-block;
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin: 0px;
+    overflow: hidden;
+}
+.grid-items li img{
+   width: 75px;
+    height: 75px;
+   object-fit: cover;
+   transition: .4s;
+  -webkit-transition: .4s;
+}
+.grid-items li img:hover{
+   transform: scale(1.15);
+   transition: .4s;
+  -webkit-transition: .4s;
+}
+
+pre.prettyprint {
+  background: #f9f9f9;
+  font-family: Menlo, Consolas, Monaco, "Courier New", monospace;
+  font-size: 10pt;
+  line-height: 1.3;
+  border: 0;
+  padding: 10px;
+  margin: 10px;
+  overflow: auto;
+}
+article{
+   padding: 10px;
+   margin: 10px;
+
+}
+article p{
+   font-size: 16px;
+   line-height: 1.6;
+}
+article h2, h3 {
+ padding: 10px 0;
+}
+.credit{
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 9pt;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+}
+.credit span:before{
+   font-family: FontAwesome;
+   color: #e41b17;
+   content: "\f004";
+}
+.credit a{
+   color: #333;
+   text-decoration: none;
+   
+}
+.credit a:hover{
+   color: #e41b17; 
+}
+.credit a:hover:after{
+    font-family: FontAwesome;
+    content: "\f08e";
+    font-size: 9pt;
+    position: absolute;
+    margin: 3px;
+}
+@media only screen and (min-width: 720px){
+    .docs{
+      width: 720px;
+       box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+      margin-left: auto;
+      margin-right: auto;
+      background: #fff; 
+    }
+  .intro, .credit{
+    width: 100%;
+    box-sizing: border-box;
+    }
+}
