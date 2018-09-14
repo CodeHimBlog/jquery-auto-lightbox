@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+ <head lang="en">
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta charset="UTF-8" />
+ <meta name="theme-color" content="#E4287C" />
+  <meta name="description" content="AutoLightbox.js allows you to create easy lightbox with caption for all your website images. It Shows them in awesome way, without setting classes or ids for individually image." /> 
+   <title> Auto Lightbox jQuery Plugin  </title>
+   <!--jQuery-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!--Auto Lightbox js-->
+   <script src="js/AutoLightbox.js"></script>
+
+<!--Demo Only -->
+      <!--Font Awesome-->
+       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <!--Google Fonts-->
+          <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet" />
+      <!--Syntax Highlighter-->
+          <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"> </script> 
+      <!--Demo CSS-->
+          <link rel="stylesheet" href="css/demo-only.css" />
+<!--End /Demo Only-->
+
+<script>
+$(document).ready(function(){
+    //selector where from images detect for light box
+$(".intro").AutoLightbox(); //auto lightbox with default settings
+   
+ $("article").AutoLightbox({
+      dimBackground: false
+});  //lightbox with custom setting, dim background off
+
+});
+</script>
+</head>
+<body>
+<main>
+  <div class="intro">
+    <h1> Auto Lightbox jQuery Plugin </h1>
+      <p> One code, for all images of your website. <br />  
+ Simple
+ <span class="elli"></span> Flexible
+ <span class="elli"></span>  Lightweight
+      </p>
+          <div class="sample">
+            <img src="images/bicycle.jpg" />
+          </div>
+          <div class="action">
+            <a class="btn github" href="#2"> Star on GitHub </a>
+            <a class="btn down" href="#1"> Download </a>
+          </div>
+   </div> <!--intro-->
+ <section class="docs">
+  <article>
+    <h2> Why Auto Lightbox</h2>
+   <p>This lightweight plugin will automatically do everything for creating a simple (but not simpler) image light box to show image with caption. You have to do nothing to set tags or classes for each image. Just call: <br />
+   <pre class="prettyprint lang-js">
+     AutoLightbox();  </pre>
+in your jQuery code, with the selector whose images to be shown in light box. 
+</p>
+<p>For example, if you want to show your article images, the statement will be:
+   <pre class="prettyprint lang-js">
+   $("article").AutoLightbox(); </pre>
+Then your article must have some images, i.e: </p>
+   <pre class="prettyprint lang-xml">
+  &lt;article&gt
+    ......some text.....
+   &lt;img src="/img/image-name.jpg" alt="your photo caption" />
+    ......some text.....
+   &lt;img src="/img/image-name.jpg" />
+    ......some text.....
+   &lt;img src="/img/image-name.jpg" />
+  &lt;/article&gt </pre>
+
+<h2>What's Happen Next </h2>
+<p> When you click on the image, this plugin will clone it and show in the light box.
+It will auto create the lightbox container, a close button, caption bar, dim over layer (optional) and some CSS styles to look awesome.  It will also automatically detect caption (from alt text), for each image. </p>
+
+<p><strong> <i> No need any extra HTML tag, CSS code or icon </i></strong> as it is created with the aim to keep you in rest. <br />
+Try it, test it and don't forget to Star it on GitHub .
+<br />
+<br />
+<b> Images with dim background effect off. </b> check them, all captions are detected from alt text, if image has no alt attribute, then the default caption will be display. 
+</p>
+<ul class="grid-items">
+<li> <img src="images/coffee.jpg" alt="Coffee Time, (from image alt text..)" /> </li>
+<li> <img src="images/header.jpg" alt="Auto Lightbox, Flexible, Easy to install" /></li>
+<li> <img src="images/sandwich.jpg" alt="Sandwich, best jQuery Lightbox" />  </li>
+<li>  <img src="images/espresso.jpg" /> </li>
+</ul>
+<!--Demo Only Ad, don't remove this if you distribute this plugin to others-->
+<div style="margin: 0 10px 10px 10px;"> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-7089100907045419"
+     data-ad-slot="7782420780"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<h2>Advance Implementation:</h2>
+<p> By default, "Auto Lightbox" is responsive, however, if you want to change its width or height you can update its settings in jQuery code, just like below: <br /> </p>
+   <pre class="prettyprint lang-js">
+   $("article").AutoLightbox({
+         width: 320,
+         height: 240
+    });  </pre> 
+<p> By default, dim background effect is on, if you want to turn it off, the statement is:</p>
+   <pre class="prettyprint lang-js">
+   $("article").AutoLightbox({
+       dimBackground: false
+
+   }); </pre>
+  </article>
+  </section>
+  </main>
+    <footer class="credit">
+Coded with <span title="heart"></span> by Asif Mughal &copy; 2018 - <a href="https://www.codehim.com/2018/09/jquery-auto-lightbox-plugin.html" rel="dofollow" title="Awesome Web Projects and Tutorials" target="_blank"> Codehim.com </a>
+      </footer>
+    </body>
+</html>
