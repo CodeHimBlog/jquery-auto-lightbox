@@ -1,5 +1,6 @@
 # AutoLightbox
 jQuery Plugin to automatically make image lightbox to show image with caption. You have to do nothing to set tags or classes for each image.
+<center> <img src="images/Preview.png" alt="jQuery Responsive Lighbox" /> </center>
 <h2> Why Auto Lightbox</h2>
    <p>This lightweight plugin will automatically do everything for creating a simple (but not simpler) image light box to show image with caption. You have to do nothing to set tags or classes for each image. Just call: <br />
    <pre class="prettyprint lang-js">
@@ -41,3 +42,7 @@ Try it, test it and don't forget to Star it on GitHub .
        dimBackground: false
 
    }); </pre>
+
+<h2> Author </h2>
+  <p> A project by Asif Mughal - <a href="https://www.codehim.com/2018/09/jquery-auto-lightbox-plugin.html" target="_blank"> AutoLightbox jQuery Plugin</a> <br />
+   Visit my homepage to download or <a href="https://www.codehim.com" target="_blank" rel="dofollow"> browse awesome web projects and tutorials</a>.
