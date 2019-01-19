@@ -2,7 +2,7 @@
  *   Author: Asif Mughal
  *   URL: https://www.codehim.com
  *   License: MIT License
- *   Copyright (c) 2018 - Asif Mughal
+ *   Copyright (c) 2019 - Asif Mughal
  *
  *   USEAGE: This lite weight plug-in automatically
  *           create "Image Lightbox" of all images available in given selector. 
